@@ -1,0 +1,10 @@
+.item span{
+    font-size: large;
+    color:gold;
+    
+}
+.item img{
+    width: 35%;
+    height: 50%;
+    border-radius: 50%;
+}

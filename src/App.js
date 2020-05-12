@@ -7,7 +7,9 @@ import Dialogs from './components/Dialogs/Dialogs';
 import News from './components/Navbar/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Navbar/Settings/Settings';
+import Friends from './components/Navbar/Friends/Friends'
 import { Route, BrowserRouter } from 'react-router-dom';
+
 
 
 const App = (props) => {
@@ -15,7 +17,7 @@ const App = (props) => {
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Navbar />
+        <Navbar  friendsList={props.state.friends.friendsList}/>
         <div class="app-wrapper-content">
           <Route  path='/dialogs' render={()=><Dialogs messages={props.state.dialogsPage.messages}
             dialogs={props.state.dialogsPage.dialogs}/>}/>

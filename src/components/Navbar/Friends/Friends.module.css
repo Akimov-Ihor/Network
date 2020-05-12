@@ -1,0 +1,22 @@
+nav{
+    grid-area: n;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  nav a{
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+  }
+  nav a:hover{
+    border-bottom: 2px solid white;
+    
+  }
+  a.activeLink{
+    color: gold;
+  }

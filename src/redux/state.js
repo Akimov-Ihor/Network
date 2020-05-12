@@ -22,8 +22,18 @@ let state={
         {id:5,message:"Ty good"},
         {id:6,message:"It`s very good"}
       ]
+    },
+    friends:{
+      friendsList:[
+     {id:1,name:"Dimych"},
+     {id:5,name:"Victor"},
+     {id:3,name:"Sveta"}
+   ]
+   }
+    
     }
+ 
+    
 
-}
 
 export default state;
