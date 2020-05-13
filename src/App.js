@@ -13,11 +13,12 @@ import { Route, BrowserRouter } from 'react-router-dom';
 
 
 const App = (props) => {
+  console.log(props.state.friends.friendsList);
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Navbar  friendsList={props.state.friends.friendsList}/>
+        <Navbar  friendsList={props.state.friends.friendsList} />
         <div class="app-wrapper-content">
           <Route  path='/dialogs' render={()=><Dialogs messages={props.state.dialogsPage.messages}
             dialogs={props.state.dialogsPage.dialogs}/>}/>
@@ -28,6 +29,7 @@ const App = (props) => {
         </div>
       </div>
     </BrowserRouter>);
+   
 
 }
 

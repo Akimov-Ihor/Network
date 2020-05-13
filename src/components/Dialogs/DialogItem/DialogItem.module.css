@@ -1,9 +1,12 @@
 .dialogs{
     display: grid;
     grid-template-columns: 2fr 10fr;
+    width: 20%;
+    color: red;
 }
 .dialogsItems{
  padding: 10px;
+ width: 20%;
 }
 .dialogsItems .active{
     color:gold;

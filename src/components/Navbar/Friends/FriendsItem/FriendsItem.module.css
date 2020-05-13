@@ -1,10 +1,22 @@
-.item span{
-    font-size: large;
-    color:gold;
+.item{
+ display: grid;
+ flex-direction: column;
+}
+.wrapper{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  
+
     
 }
 .item img{
-    width: 35%;
-    height: 50%;
-    border-radius: 50%;
+    width: 30px ;
+    height: 35px;
+    border-radius: 100%;
+    /* outline: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
