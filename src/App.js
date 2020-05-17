@@ -9,27 +9,30 @@ import Music from './components/Music/Music';
 import Settings from './components/Navbar/Settings/Settings';
 import Friends from './components/Navbar/Friends/Friends'
 import { Route, BrowserRouter } from 'react-router-dom';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 
 
 
 const App = (props) => {
-  console.log(props.state.friends.friendsList);
+  console.log(props.store)
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Navbar  friendsList={props.state.friends.friendsList} />
-        <div class="app-wrapper-content">
-          <Route  path='/dialogs' render={()=><Dialogs messages={props.state.dialogsPage.messages}
-            dialogs={props.state.dialogsPage.dialogs}/>}/>
-          <Route  path='/profile' render={()=><Profile postData={props.state.profilePage.postData}/>} />
-          <Route  path='/news' render={News} />
-          <Route  path='/music' render={Music} />
-          <Route  path='/settings' render={Settings} />
+        <Navbar store={props.store} />
+        <div className="app-wrapper-content">
+          <Route path='/dialogs'
+            render={() => <DialogsContainer store={props.store} />} />
+          <Route path='/profile'
+            render={() => <Profile store = {props.store}/>} />
+          <Route path='/news' render={News} />
+          <Route path='/music' render={Music} />
+          <Route path='/settings' render={Settings} />
         </div>
       </div>
+
     </BrowserRouter>);
-   
+
 
 }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import s  from '../FriendsItem/FriendsItem.module.css'
 
 const FriendsItem=(props)=>{
- console.log(props.name)
     return(
  <div className={s.item}>
      <div className={s.wrapper}>

@@ -3,8 +3,8 @@ import  s from'./Friends.module.css';
 import FriendsItem from './FriendsItem/FriendsItem'
 
 const Friends = (props) => {
-    
-    let sideBarFriends= props.friendsList.map(p=><FriendsItem name={p.name} />)
+    let state=props.store.getState().friendsList;
+    let sideBarFriends= state.friendsList.map(p=><FriendsItem name={p.name} />)
     return (
         <div className={s.friends}>
             <span >Friends:</span>
