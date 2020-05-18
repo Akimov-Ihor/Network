@@ -3,13 +3,13 @@ import  s from'./Friends.module.css';
 import FriendsItem from './FriendsItem/FriendsItem'
 
 const Friends = (props) => {
-    let state=props.store.getState().friendsList;
-    let sideBarFriends= state.friendsList.map(p=><FriendsItem name={p.name} />)
+    // let state=props.store.getState().friendsList;
+    // let sideBarFriends= state.friendsList.map(p=><FriendsItem name={p.name} />)
     return (
         <div className={s.friends}>
             <span >Friends:</span>
             <div className={s.lists}>
-                  {sideBarFriends}
+                  {/* {sideBarFriends} */}
                 </div>
             </div>
     );
