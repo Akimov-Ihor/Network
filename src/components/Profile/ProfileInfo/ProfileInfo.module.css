@@ -1,3 +1,18 @@
 .descriptionBlock{
     padding: 10px;
 }
+.contacts{
+    display: flex;
+    flex-direction: column;
+    
+}
+.contacts>span{
+    font-size: 30px;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+}
+.fullName{
+    font-size: 35px;
+}
