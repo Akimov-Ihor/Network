@@ -2,11 +2,11 @@ import React from 'react';
 import userPhoto from '../../assets/images/usersSmallicon.png'
 import s from './Users.module.css';
 import { NavLink } from 'react-router-dom';
-import * as axios from 'axios';
 import { usersAPI } from '../../api/api';
 
 
 let Users = (props) => {
+    debugger
     let pagesCount = Math.ceil((props.totalUsersCount / props.pageSize) / 11);
     let pages = [];
     for (let i = 1; i <= pagesCount; i++) {
