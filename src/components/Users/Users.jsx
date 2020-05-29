@@ -7,12 +7,12 @@ import { usersAPI } from '../../api/api';
 
 let Users = (props) => {
     debugger
-    let pagesCount = Math.ceil((props.totalUsersCount / props.pageSize) / 11);
+    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
     let pages = [];
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i);
     }
-
+debugger
     return <div>
         <div>
             {pages.map(p => {
