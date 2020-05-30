@@ -1,6 +1,4 @@
 import * as axios from 'axios';
-import { setCurrentPage } from '../redux/users-reducer';
-const baseUrl = 'https://social-network.samuraijs.com/api/1.0'
 
 const instance = axios.create({
     withCredentials: true,

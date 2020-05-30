@@ -3,6 +3,7 @@ import s from './ProfileInfo.module.css';
 import Preloader from '../../Preloader/Preloader';
 import Large from '../../../assets/images/Large.png'
 import ProfileStatus from './ProfileStatus.jsx';
+import ProfileStatusWithHooks from './ProfileStatusWithHooks'
 
 
 const ProfileInfo = (props) => {
@@ -19,7 +20,7 @@ const ProfileInfo = (props) => {
                 
                 <img src={props.profile.photos.large !=null? props.profile.photos.large : Large  }  />
                 <div className={s.fullName}>{props.profile.fullName}</div>
-                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+                <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
                 <div>{props.profile.aboutMe}</div>
                 <div className={s.contacts}>
                     <span>Contacts:</span>
