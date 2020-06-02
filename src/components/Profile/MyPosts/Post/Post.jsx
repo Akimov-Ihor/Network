@@ -2,8 +2,6 @@ import React from 'react';
 import s from '../Post/Post.module.css';
 
 const Post = (props) => {
-    console.log(props)
-    
     return (
 
         <div className={s.item}>

@@ -12,7 +12,7 @@ import HeaderContainer from './components/Header/HeaderContainer';
 import LoginPage from './components/Login/Login';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import {initializeApp}from '../src/redux/app-reducer'
+import { initializeApp } from '../src/redux/app-reducer'
 import Preloader from './components/Preloader/Preloader';
 
 
@@ -23,8 +23,8 @@ class App extends React.Component {
     this.props.initializeApp();
   }
   render() {
-    if (!this.props.initialized){
-      return <Preloader/>
+    if (!this.props.initialized) {
+      return <Preloader />
     }
     return (
       <div className="app-wrapper">
@@ -51,10 +51,10 @@ class App extends React.Component {
 
 }
 
-const mapStateToProps=(state)=>({
- initialized:state.app.initialized
+const mapStateToProps = (state) => ({
+  initialized: state.app.initialized
 })
 
 export default compose(
-   withRouter, 
-   connect(mapStateToProps,{initializeApp})) (App);
+  withRouter,
+  connect(mapStateToProps, { initializeApp }))(App);

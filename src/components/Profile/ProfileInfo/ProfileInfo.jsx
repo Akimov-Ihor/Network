@@ -1,9 +1,8 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from '../../Preloader/Preloader';
-import Large from '../../../assets/images/Large.png'
-import ProfileStatus from './ProfileStatus.jsx';
-import ProfileStatusWithHooks from './ProfileStatusWithHooks'
+import Large from '../../../assets/images/Large.png';
+import ProfileStatusWithHooks from './ProfileStatusWithHooks';
 
 
 const ProfileInfo = (props) => {
